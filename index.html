@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Typer Intro</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .container {
+            border: 1px solid #00ff00;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 6vw;
+            max-font-size: 24px;
+        }
+        .instructions {
+            margin-top: 10px;
+            line-height: 1.5;
+            font-size: 4vw;
+            max-font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button:hover {
+            background-color: #00ff00;
+            color: black;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 3vw;
+            max-font-size: 12px;
+            color: #00ff00;
+            word-wrap: break-word;
+        }
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 600px) {
+            h1 { font-size: 24px; }
+            .instructions { font-size: 16px; }
+            .footer { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Hacker Typer Simulation</h1>
+        <div class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Start typing on your computer screen to simulate 'coding'.</li>
+                <li>Press ALT three times to display "Access Granted".</li>
+                <li>Press CAPS LOCK three times to display "Access Denied".</li>
+                <li>Press ESC to clear any messages.</li>
+                <li>Only works on computer screens for the best experience.</li>
+            </ul>
+        </div>
+        <button onclick="startTyping()">Start HackerTyping...</button>
+    </div>
+
+    <div class="footer">
+        Created by Pradeep Nainwal | 
+        <a href="about.html">About</a> | 
+        <a href="https://www.linkedin.com/in/pradeep-nainwal-885069204/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/pradeep-nainwal" target="_blank">GitHub</a>
+    </div>
+
+    <script>
+        function startTyping() {
+            window.location.href = 'main.html';
+        }
+    </script>
+</body>
+</html>
